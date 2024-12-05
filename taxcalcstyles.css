@@ -1,0 +1,148 @@
+body {
+    background-image: url("https://taborasj.wordpress.com/wp-content/uploads/2020/04/message-04-2020.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 42, 0.6);
+    z-index: 1;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.header img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.header h1 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 63, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+label, input, button {
+    font-size: 1em;
+    color: #ffffff;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 100%;
+    background-color: #002855;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0074D9;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0053a6;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #004080;
+    transform: scale(0.95);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.back-to-home {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+    background-color: #0056a2;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: auto;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+.back-to-home:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.back-to-home:active {
+    transform: scale(0.95);
+    background-color: #003a70;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}

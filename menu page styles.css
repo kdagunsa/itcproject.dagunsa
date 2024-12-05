@@ -1,0 +1,146 @@
+body {
+    background-image: url("https://taborasj.wordpress.com/wp-content/uploads/2020/04/message-04-2020.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.555); 
+    z-index: 1; 
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2; 
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    max-width: 50px;
+    margin-right: 10px; 
+}
+
+.header h1 {
+    font-size: 1.2em; 
+    margin: 0;
+}
+
+.about-section {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    text-align: right;
+    background-color: rgba(0, 0, 63, 0.8); 
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.about-section a {
+    display: block;
+    margin: 5px 0;
+    padding: 8px 12px;
+    background-color: #0056a2; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.about-section a:hover {
+    background-color: #004080; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.about-section a:active {
+    transform: scale(0.95); 
+    background-color: #003a70; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+.content {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+    width: 90%;
+    max-width: 600px; 
+    margin: auto; 
+    background-color: rgba(0, 0, 63, 0.8); 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: #cce7ff; 
+}
+
+.assignment-button {
+    display: block;
+    padding: 10px 15px;
+    margin: 10px auto; 
+    background-color: #0056a2; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+    width: 100%;
+    max-width: 250px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.assignment-button:hover {
+    background-color: #004080; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.assignment-button:active {
+    transform: scale(0.95); 
+    background-color: #003a70; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    font-size: 0.9em;
+    color: #cccccc;
+}

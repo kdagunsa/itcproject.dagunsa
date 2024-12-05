@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle John Dave Dagunsa - Loops Assignment</title>
+    <link rel="stylesheet" href="loopsstyles.css">
+    <style>
+        .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+            padding: 10px 20px;
+            background-color: #594caf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .back-to-home:hover {
+            background-color: #45a049;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://images.squarespace-cdn.com/content/v1/5c76a250a568275dfaf44efb/1551588779642-Y3LUQ5AQGV6IZ65W6DW2/Ateneo-de-Davao-Logo-e1518501546893.png" alt="Ateneo Logo">
+        <h3>Kyle John Dave Dagunsa</h3>
+    </div>
+
+    <div class="content">
+        <h2>Factorial, Sum, and Average Calculator</h2>
+        
+        <label for="number">Enter Number:</label>
+        <input id="number" type="number" placeholder="e.g., 5">
+
+        <button onclick="calculateFactorial()">Factorial (While Loop)</button>
+        <button onclick="calculateSum()">Sum (Do While Loop)</button>
+        <button onclick="calculateAverage()">Average (For Loop)</button>
+    </div>
+
+    <div id="result-window" class="result-window">
+        <h2>Result</h2>
+        <p id="result"></p>
+    </div>
+
+    <button class="back-to-home" onclick="window.location.href='index.html';">Back to Home Page</button>
+
+    <script src="loopsjs.js"></script>
+</body>
+</html>
